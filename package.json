@@ -25,15 +25,16 @@
   },
   "homepage": "https://github.com/vorpaljs/vorpal-repl#readme",
   "devDependencies": {
-    "mocha": "^2.2.5",
+    "mocha": "^6.1.4",
     "should": "^7.0.2",
-    "vorpal": "^1.0.0",
-    "xo": "^0.7.1"
+    "vorpal": "github:joshmanders/vorpal#fix-vulnerabilities",
+    "xo": "^0.24.0"
   },
   "dependencies": {
     "chalk": "^1.1.0",
+    "inquirer": "^6.5.0",
     "json-stringify-safe": "^5.0.1",
-    "lodash": "^3.10.0"
+    "lodash": "^4.17.14"
   },
   "engines": {
     "node": ">= 0.11.16",
@@ -47,6 +48,11 @@
       "node",
       "mocha"
     ],
-    "space": true
+    "space": true,
+    "rules": {
+      "import/no-unassigned-import": false,
+      "no-eval": 0,
+      "no-use-extend-native/no-use-extend-native": false
+    }
   }
 }
